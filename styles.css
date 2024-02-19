@@ -1,0 +1,124 @@
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+--Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--fs: 18px;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding-block:4rem;
+    width:100%;
+    height:100%;
+    display:flex;
+    place-items: center;
+    place-content: center;
+    background:var(--Very-dark-blue-mainBG);
+    font-family: 'Outfit',sans-serif;
+}
+main{
+    width:400px;
+    padding:2rem;
+    padding-bottom:1rem;
+    background:var(--Very-dark-blue-cardBG);
+    border-radius: 10px;
+}
+.hero-section{
+    width:100%;
+    height:300px;
+    border-radius: 10px;
+    background: var(--Cyan) url("img/icon-view.svg") no-repeat center;
+    overflow: hidden;
+}
+.content{
+    font-size:var(--fs);
+    margin-top:2rem;
+}
+.title{
+    font-size: calc(var(--fs) * 1.4);
+    color:var(--White);
+}
+.text{
+    font-size: var(--fs);
+    color:var(--Soft-blue);
+    font-weight:300;
+    line-height: 1.8rem ;
+}
+.title:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.data{
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    margin-top:-1rem;
+}
+span{
+    display:flex;
+    gap:.5rem;
+}
+.icon{
+    height:20px;
+    margin-top:1.2rem;
+}
+.amount{
+    color:var(--Cyan);
+    font-size: var(--fs);
+    font-weight: 600;
+}
+
+.time{
+    color:var(--Soft-blue);
+    font-size: var(--fs);
+}
+
+hr{
+    border: none;
+    height:2px;
+    background: var(--Very-dark-blue-line);
+}
+.author{
+    display:flex;
+    place-items: center;
+    gap:1.5rem;
+}
+.author-avatar{
+    height:40px;
+    width:40px;
+    border:1px solid var(--White);
+    border-radius: 50%;
+}
+.description{
+    font-size:var(--fs);
+    color:var(--Soft-blue);
+    font-weight: 300;
+}
+strong{
+    font-weight: 300;
+    color:var(--White);
+}
+strong:hover{
+    cursor: pointer;
+    color:var(--Cyan);
+}
+.hero-section>*,.title,strong{
+    transition: all 0.1s ease-in;
+}
+
+.equilibrium{
+    width:100%;
+    height:100%;
+}
+.equilibrium:hover{
+    cursor: pointer;
+    opacity: 0.3;
+}
